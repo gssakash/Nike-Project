@@ -366,19 +366,19 @@ Remove or comment-out the code block below to see how the browser will fall-back
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    min-width:100%;
     position: relative;
     top: 24px;
     background: #111111;
     margin-bottom:25.6px;
  }
 
- .footer-top{
+ /* .footer-top{
     display:grid;
     grid-template-columns: minmax(250px,repeat(4,2fr));
     grid-gap:2em;
     grid-auto-rows: auto;
-}
+} */
  
 .footer-list-1{
     margin-right:150px;
@@ -437,12 +437,7 @@ footer .footer-top {
     font-size:14px;
 }
 
-.footer-icons-contain {
-    position: relative;
-    display: flex;
-    color:#f5f5f5;
-    justify-content: space-evenly;
-}
+
 
 section.footer{
     overflow-y:hidden;
@@ -499,27 +494,26 @@ section.footer{
 }
 
 .footer-logo{
-    margin-left:25px;
-    margin-top:15px;
+  margin-left:25px;
+  margin-top:15px;
 }
 
-
-
-.footer-icons li{
-    display:flex;
+.footer-icons-contain {
+    position: relative;
+    display: flex;
+    color:#f5f5f5;
     justify-content: space-evenly;
-}
-
-.footer-icons-contain{
     font-size:1.155em;
     color:#F5F5F5;
-
+    min-width:35%;
 }
 
 .footer-icons-contain a{
-    color:rgb(225, 225, 225);
-    text-decoration: none;
+  color:rgb(225, 225, 225);
+  text-decoration: none;
 }
+
+
 
 .icon-wrap a:hover{
     color:rgb(180, 180, 180);
@@ -565,7 +559,7 @@ section.footer{
     .features-image {
     
         height:500px;
-        width:550px;
+        width:500px;
        margin:0 auto;
     display:flex;
     align-items:center;
@@ -607,10 +601,8 @@ section.footer{
       font-size:50px;
     }
     
-      footer{
-          display:none;
-      }
-    /* footer .footer-top {
+    
+    footer .footer-top {
         
         display:grid;
 grid-template-columns: 1fr;
@@ -618,5 +610,50 @@ grid-template-columns: 1fr;
         position: relative;
         top: 24px;
         padding-bottom: 24px;
-    } */
+    } 
+
+    .footer-logo{
+      margin:0;
+    }
+
+    .footer-list-2, .footer-list-3{
+      margin-left:65px;
+
+    }
+
+    .footer-bottom{
+      display:grid;
+      grid-template-columns:1fr;
+      grid-template-rows:4fr;
+    }
+
+    .footer-bottom-right{
+      display:grid;
+      grid-template-columns:1fr;
+      grid-template-rows:3fr;
+    }
+
+    /* .footer-icons-contain{
+      margin-bottom:20px;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      grid-template-rows:1fr;
+  } */
+
+  .footer-icons-contain{
+    margin-top:20px;
+      margin-bottom:20px;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      grid-template-rows:1fr;
+      max-width:35%;
+  }
+    .icon-wrap{
+    display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-left:25px;
+  }
+
+
 }
