@@ -15,6 +15,14 @@ html{
     scroll-behavior:smooth;
 }
 
+.stop{
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
+/* Preloader */
+
+
+
 /* Navigation */
 
 nav{
@@ -56,12 +64,14 @@ nav{
 .home-content {
     min-height: 90vh;
   }
-  
+
+
+
 
 
   .home-text {
       margin-top:10vh;
-    margin-left: 75px;
+    margin-left: 100px;
   }
   
   .home-text p {
@@ -78,7 +88,7 @@ nav{
     font-size: 2.8em;
   }
   .showcase-btn {
-    margin-left: 75px;
+    margin-left: 100px;
     margin-top: 40px;
     padding: 15px 40px;
     font-family: "Rubik", sans-serif;
@@ -273,6 +283,8 @@ nav{
 	transform: scale(1.15);
 }
 
+
+
 /*
 
 The following rule will only run if your browser supports CSS grid.
@@ -295,68 +307,71 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 
 
+/* Customer review Carousel/Slider */
 /* Customer review carousel */
 
 .slideshow-container {
-    position: relative;
-    background: inherit;
-    width:60vw;
-    margin:0 auto;
-    margin-top:-50px;
-    margin-bottom:80px;
-    font-size:20px;
-  }
+  position: relative;
+  background: inherit;
+  width:60vw;
+  margin:0 auto;
+  margin-top:-50px;
+  margin-bottom:80px;
+  font-size:20px;
+}
 
-  .heading-2{
-    font-family: "Montserrat", Arial, sans-serif;
-	font-size: 2.7rem;
-	font-weight: 500;
-	line-height: 1.5;
-	text-align: center;
-	padding: 2.5rem 0;
-    color: #1a1a1a;
-  }
-  
-  .mySlides {
-    display: none;
-    padding: 80px;
-    text-align: center;
-  }
+.heading-2{
+  font-family: "Montserrat", Arial, sans-serif;
+font-size: 2.7rem;
+font-weight: 500;
+line-height: 1.5;
+text-align: center;
+padding: 2.5rem 0;
+  color: #1a1a1a;
+}
 
-
-  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: rgb(0,0,0,0.8);
-    font-weight: bold;
-    font-size: 40px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
 
 
-  .next {
-      margin-top:-40px;
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
 
- 
-  .author{
-      padding-top:10px;
-  }
-  
-  /* .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-    color: white;
-  }
-   */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: rgb(0,0,0,0.8);
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+    margin-top:-40px;
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.author{
+    padding-top:10px;
+}
+
+/* .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+ */
+
+
   
 
 /* Footer */
@@ -382,9 +397,15 @@ Remove or comment-out the code block below to see how the browser will fall-back
  
 .footer-list-1{
     margin-right:150px;
-}
+  }
 
-.footer-1-ul{
+  .footer-list-1 ul li{
+
+    font-family: 'Jockey One', sans-serif;
+    letter-spacing:0.6px;
+  }
+  
+  .footer-1-ul{
     margin-left:15px;
 }
 
@@ -601,7 +622,17 @@ section.footer{
       font-size:50px;
     }
     
-    
+    .slideshow-container{
+      margin-bottom:0px;
+    }
+
+    .heading-2{
+      padding-bottom:0px;
+    }
+
+    .mySlides{
+      padding-top:30px;
+    }
     footer .footer-top {
         
         display:grid;
