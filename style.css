@@ -817,7 +817,6 @@ section.footer{
     /* Footer */
 
     footer .footer-top {
-        
         display:grid;
         grid-template-columns: 1fr;
         width: 80vw;

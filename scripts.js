@@ -50,10 +50,16 @@ sr.reveal('.nav-container', {
 //     distance:'200px'
 // });
 
-sr.reveal('.home-wrap', {
+sr.reveal('.home-text', {
     duration:3000,
     origin:'left',
     distance:'300px'
+});
+
+sr.reveal('.home-image', {
+  duration:4000,
+  origin:'top',
+  distance:'300px'
 });
 
 sr.reveal('.points-container', {
@@ -62,11 +68,11 @@ sr.reveal('.points-container', {
     distance:'300px'
 });
 
-// sr.reveal('.features-image', {
-//     duration:3000,
-//     origin:'top',
-//     distance:'300px'
-// });
+sr.reveal('.features-image', {
+    duration:3000,
+    origin:'bottom',
+    distance:'300px'
+});
 
 sr.reveal('.pics-container', {
     duration:3400,
@@ -79,4 +85,5 @@ sr.reveal('.reviews', {
   origin:'bottom',
   distance:'400px'
 })
+
 
