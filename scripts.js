@@ -81,7 +81,7 @@ sr.reveal('.pics-container', {
 })
 
 sr.reveal('.reviews', {
-  duration:3400,
+  duration:3000,
   origin:'bottom',
   distance:'400px'
 })
