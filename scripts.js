@@ -44,11 +44,11 @@ sr.reveal('.nav-container', {
 });
 
 
-sr.reveal('.home-image', {
-    duration:3000,
-    origin:'top',
-    distance:'200px'
-});
+// sr.reveal('.home-image', {
+//     duration:3000,
+//     origin:'top',
+//     distance:'200px'
+// });
 
 sr.reveal('.home-wrap', {
     duration:3000,
@@ -62,11 +62,11 @@ sr.reveal('.points-container', {
     distance:'300px'
 });
 
-sr.reveal('.features-image', {
-    duration:3000,
-    origin:'top',
-    distance:'300px'
-});
+// sr.reveal('.features-image', {
+//     duration:3000,
+//     origin:'top',
+//     distance:'300px'
+// });
 
 sr.reveal('.pics-container', {
     duration:3400,

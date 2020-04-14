@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
 
     <title>Product Landing Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="nike-favicon.png"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <body>
    
@@ -42,7 +45,7 @@
             <a class="nav-link" href="#Gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Reviews" style="margin-right:90px;">Reviews</a>
+            <a class="nav-link" id="reviews" href="#Reviews">Reviews</a>
           </li>
         </ul>
       </div>
@@ -53,39 +56,28 @@
   <div class="stop">
 
   <section class="home" id="Home">
-      <div class="home-content">
-          <div class="row">
-              <div class="col-md-6 col-sm-6 home-wrap">
           <div class="home-text">
           <h1>Nike</h1><br>
           <h3>Phantom Vision <span class="year">2020</span></h3><br>
           <p class="lead">
             The <strong>Nike Phantom Vision </strong> feature a revolutionary Ghost lacing system with a foot-hugging inner sleeve, a HyperPrecision outsole for ultimate traction, a Dynamic Fit collar, and a Flyknit/Quad Mesh upper with Nikeskin. The result is a boot that fits comfortably and allows for a natural and responsive ball feel.
           </p>
-        </div>
+          <div class="cta">
+          <button class="btn cta" style="outline: none;">
         <a href="https://www.nike.com/in/u/phantom-vision-academy-jr-id-45008/839257209" target="_blank" class="btn btn-default btn-lg btn-outline-dark showcase-btn">SHOP NOW</a>
-    </div>
-        <div class="col-xs-12 col-md-6 col-sm-6">
-        <div class="home-image">
-           <img src="nike-double.jpg" alt="Pic-1">
-        </div>
-    </div>
+        </button>
       </div>
       </div>
+           <img src="images/nike-double.jpg" class="home-image img-fluid" alt="Pic-1">
   </section>
-
 
   <!-- Features-->
 
   <section class="features" id="Features">
-      <div class="features-container">
-        <div class="row">
-          <div class=" col-xs-12 col-md-6 col-sm-6">
             <div class="features-image">
-              <img src="boot-gold-copy.jpg" alt="Pic-2">
+              <img src="images/boot-gold-copy.jpg" alt="Pic-2">
             </div>
-        </div>
-      <div class=" col-xs-12 col-md-6 col-sm-6 points-container">
+      <div class="points-container">
           <div class="points">
             <!-- <h1 style="margin-top:100px; margin-left:-100px;">Nike</h1> -->
             <h1>Phantom Vision</h1><br>
@@ -110,7 +102,7 @@
              </li>
 
              <li>
-               <div class="checkboxer fourth">
+               <div class="checkboxer">
        <i class="fa fa-check-square icone" aria-hidden="true"></i><span style="font-size:20px;  font-weight: 600; ">Multi Directional Studs</span>
                </div>
              </li>
@@ -118,8 +110,6 @@
            </ul>
          </div>
        </div>
-     </div>
-   </div>
  </section>
 
   <!--Gallery-->
@@ -133,30 +123,30 @@
       <div class="gallery">
 
     
-        <div class="gallery-item">
-          <img class="gallery-image" src="boot-1.jpg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+        <div class="gallery-item first">
+          <img class="gallery-image" src="images/boot-1.jpg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
         </div>
     
-        <div class="gallery-item">
-          <img class="gallery-image" src="nikes.jpg" alt="sunset behind San Francisco city skyline">
+        <div class="gallery-item second">
+          <img class="gallery-image" src="images/nikes.jpg" alt="sunset behind San Francisco city skyline">
         </div>
     
-        <div class="gallery-item">
-          <img class="gallery-image" src="nike-right.jpg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+        <div class="gallery-item third">
+          <img class="gallery-image" src="images/nike-right.jpg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
         </div>
     
 
 
-        <div class="gallery-item">
-          <img class="gallery-image" src="yellow.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+        <div class="gallery-item fourth">
+          <img class="gallery-image" src="images/yellow.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
         </div>
     
-        <div class="gallery-item">
-          <img class="gallery-image" src="football.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+        <div class="gallery-item fifth">
+          <img class="gallery-image" src="images/football.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
         </div>
     
-        <div class="gallery-item">
-          <img class="gallery-image" src="boot-final.webp" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+        <div class="gallery-item sixth">
+          <img class="gallery-image" src="images/boot-final.webp" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
         </div>
 
 
@@ -189,11 +179,12 @@
 
   <div class="mySlides">
 
-    <!-- <q> These boots with the Quadfit Mesh upper, Dynamic Fit collar and Ghost Lace system working together to give you the ultimate locked-down feel. </q> -->
+    <br><br><br>
     <q>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi labore laboriosam minima voluptatem hic, inventore et fugiat consectetur ducimus doloremque.</q>
     <p class="author">- Josh Cleats</p>
     <br>
   </div>
+    <!-- <q> These boots with the Quadfit Mesh upper, Dynamic Fit collar and Ghost Lace system working together to give you the ultimate locked-down feel. </q> -->
 
   <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
@@ -234,7 +225,7 @@
             </ul>
         </div>
         <div class="footer-icons">
-          <div class="footer-logo">
+          <div class="footITS NIKEer-logo">
             <img src="nike-black.png" alt="ITS NIKE" width="150px" height="120px">
           </div>
           <div class="footer-icons-contain">
@@ -246,7 +237,7 @@
     </div>
     <div class="footer-bottom">
         <div class="footer-bottom-left">
-            <p>© 2020 Nike, Inc. All Rights Reserved</p>
+            <p>© 2020 Nike, Inc. All Rights Reserved | Design Credits - <a href="https://dribbble.com/ofspacedesign" target="_blank"> Ofspace Team </a></p>
         </div>
         <div class="footer-bottom-right">
             <p>Guides</p>
@@ -257,9 +248,7 @@
 </footer>
 </section>
 
-<script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
    <script src="scripts.js"></script>
 </body>
