@@ -74,15 +74,15 @@ sr.reveal('.features-image', {
     distance:'300px'
 });
 
-sr.reveal('.pics-container', {
-    duration:3400,
+sr.reveal('.gallery', {
+    duration:3000,
     origin:'bottom',
     distance:'400px'
 })
 
-sr.reveal('.reviews', {
-  duration:3000,
-  origin:'bottom',
+sr.reveal('#Reviews', {
+  duration:2500,
+  origin:'left',
   distance:'400px'
 })
 

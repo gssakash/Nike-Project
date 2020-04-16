@@ -610,6 +610,12 @@ section.footer{
 
 @media(max-width:1024px)
 {
+
+  a.nav-link:hover {
+    border-bottom: 2px solid transparent;
+    font-weight: bolder;
+}
+
   .home
   {
     display:grid;
